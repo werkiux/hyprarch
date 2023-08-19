@@ -1,0 +1,71 @@
+[{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-left": 6,
+"margin-right": 6,
+"margin-top": 0,
+
+"modules-left": [
+	"custom/menu",
+	"wlr/workspaces", 
+	"temperature",
+	"cpu", 
+	"memory",
+	"disk",
+	"custom/weather",
+	],
+  
+"modules-center": [
+	"custom/cycle_wall", 
+	"clock",
+	"custom/light_dark",
+	"custom/lock",
+	], 
+
+"modules-right": [
+	"tray",
+	"battery",
+	"pulseaudio",
+	//"wireplumber", 
+	"pulseaudio#microphone",	  
+	"backlight",
+	"custom/updater",
+	"custom/power",
+	],
+},
+
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "bottom",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-left": 6,
+"margin-right": 6,
+"margin-bottom": 6,
+
+"modules-left": [ 
+	 
+	 ],
+
+"modules-center": [
+	 "wlr/taskbar",
+	
+	],
+
+"modules-right": [
+	
+	],
+
+}]
