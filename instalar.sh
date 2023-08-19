@@ -297,8 +297,8 @@ if [[ $COPIA == "S" || $COPIA == "s" ]]; then
         cp -R config/$DIR ~/.config/ &>> $LOG
     done
 
-    #mkdir -p ~/Imágenes/Wallpapers
-    cp -r cosas/Wallpapers ~/Imágenes/ && { echo "¡Copia completada!"; } || { echo "Error: no se pudieron copiar los fondos de pantalla"; exit 1; } 2>&1 | tee -a "$LOG"
+    #mkdir -p ~/Imágenes/wallpapers
+    cp -r cosas/wallpapers ~/Imágenes/ && { echo "¡Copia completada!"; } || { echo "Error: no se pudieron copiar los fondos de pantalla"; exit 1; } 2>&1 | tee -a "$LOG"
     echo -e "$NOTA - Establecer algunos archivos como ejecutables."
     # Dar permisos de ejecucion a los scripts. 
     chmod +x ~/.config/hypr/scripts/* 2>&1 | tee -a "$LOG"
